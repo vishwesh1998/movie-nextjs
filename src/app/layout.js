@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Providers from '@/app/providers.jsx'
 import NavBar from "@/components/navBar";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

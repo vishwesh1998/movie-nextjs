@@ -10,7 +10,7 @@ export default function NavItems({title, params}) {
     const search = param.get('search')
 
     useEffect(()=>{
-        console.log(search)
+        // console.log(search)
     })
 
   return (
