@@ -17,11 +17,10 @@ export default function Home(){
     if(data.ok){
       let result = await data.json()
       if(result)  
-        // console.log(result)
         setMovieData(result.results)
+      console.log(result.results)
     }
-    else
-    {
+    else {
       throw new Error('Something went wrong !')
     }
   }
