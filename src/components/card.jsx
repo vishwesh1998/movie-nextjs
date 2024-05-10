@@ -6,7 +6,7 @@ import { FaRegThumbsUp } from "react-icons/fa";
 
 export default function Card({movieInternalData}) {
   return (
-    <div className='my-3 sm:m-2 sm:border sm:border-slate-400 sm:p-4 rounded-lg sm:hover:shadow-slate-400 sm:shadow-lg transition-shadow duration-200'>
+    <div className='my-3 sm:m-2 sm:border sm:border-slate-400 sm:p-4 rounded-lg sm:hover:shadow-slate-400 sm:shadow-lg transition-shadow duration-200' key={movieInternalData.id}>
         <Link href={`/movies/${movieInternalData.id}`}>
         <Image
         src={`https://image.tmdb.org/t/p/original/${movieInternalData.backdrop_path || movieInternalData.poster_path}`} width={500} height={300}
