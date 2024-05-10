@@ -10,13 +10,13 @@ export default function Card({movieInternalData}) {
         <Link href={`/movies/${movieInternalData.id}`}>
         <Image
         src={`https://image.tmdb.org/t/p/original/${movieInternalData.backdrop_path || movieInternalData.poster_path}`} width={500} height={300}
-        className='hover:opacity-80'></Image>
+        className='hover:opacity-80 rounded-lg min-w-xl'></Image>
         </Link>
         <div>
             <p className='line-clamp-2'>{movieInternalData.overview}</p>
             <h1 className='text-lg font-bold truncate'>{movieInternalData.title || movieInternalData.name}</h1>
             <p className='flex'>
-                {movieInternalData.popularity} <FaRegThumbsUp className='ml-4 mt-1 mr-1'/>
+                {movieInternalData.release_date} <FaRegThumbsUp className='ml-4 mt-1 mr-1'/>
                 {movieInternalData.vote_count}
                 </p>
         </div>
